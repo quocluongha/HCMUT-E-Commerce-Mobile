@@ -9,11 +9,6 @@ module.exports = {
         alias: {},
       },
     ],
-    [
-      'react-native-reanimated/plugin',
-      {
-        relativeSourceLocation: true,
-      },
-    ],
+    ['react-native-reanimated/plugin'],
   ],
 };
