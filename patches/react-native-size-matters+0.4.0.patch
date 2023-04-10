@@ -1,0 +1,14 @@
+diff --git a/node_modules/react-native-size-matters/index.d.ts b/node_modules/react-native-size-matters/index.d.ts
+index 71c459d..f15bbbf 100644
+--- a/node_modules/react-native-size-matters/index.d.ts
++++ b/node_modules/react-native-size-matters/index.d.ts
+@@ -24,6 +24,9 @@ declare module "react-native-size-matters" {
+         scaleY?: string | number;
+         translateX?: string | number;
+         translateY?: string | number;
++        gap?: string | number;
++        columnGap?: string | number;
++        rowGap?: string | number;
+     }
+ 
+     export function scale(size: number): number;
