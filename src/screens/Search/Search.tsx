@@ -1,6 +1,9 @@
 import React, { useLayoutEffect } from 'react'
 import { FlatList, Text, View } from 'react-native'
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import { ScaledSheet } from 'react-native-size-matters'
+
+import { SafeAreaView } from 'components/organisms'
 
 import { SearchScreenProps } from 'navigation/types'
 
@@ -16,7 +19,11 @@ export const Search: React.FC<SearchProps> = ({ navigation }) => {
     })
   }, [navigation])
 
-  return null
+  return (
+    <SafeAreaView edges={['bottom']}>
+      <KeyboardAwareScrollView></KeyboardAwareScrollView>
+    </SafeAreaView>
+  )
 }
 
 const styles = ScaledSheet.create({

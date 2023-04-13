@@ -29,7 +29,7 @@ export const Splash: React.FC<Props> = ({ navigation }) => {
   const navigateToApp = () =>
     navigation.reset({
       index: 0,
-      routes: [{ name: isLoggedIn ? 'MainTab' : 'Login' }],
+      routes: [{ name: isLoggedIn ? 'MainTab' : 'Landing' }],
     })
 
   const codePushSync = () => {

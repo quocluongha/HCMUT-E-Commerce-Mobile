@@ -13,6 +13,7 @@ export type MainStackParams = {
   OTPScreen: any
   Registration: any
   Search: any
+  Landing: any
 }
 
 export * from './Address'
@@ -23,3 +24,4 @@ export * from './ProducDetail'
 export * from './Registration'
 export * from './Splash'
 export * from './Search'
+export * from './Landing'

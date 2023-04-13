@@ -16,6 +16,7 @@ import { useAppDispatch } from 'hooks'
 import {
   AddressEditor,
   Checkout,
+  Landing,
   ListAddress,
   Login,
   OTPScreen,
@@ -70,6 +71,12 @@ export const AppNavigator: React.FC = () => {
         <Stack.Screen
           name="Splash"
           component={Splash}
+          options={{ headerShown: false }}
+        />
+
+        <Stack.Screen
+          name="Landing"
+          component={Landing}
           options={{ headerShown: false }}
         />
 
