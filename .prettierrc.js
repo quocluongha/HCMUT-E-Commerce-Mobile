@@ -1,7 +1,35 @@
 module.exports = {
   arrowParens: 'avoid',
-  bracketSameLine: true,
-  bracketSpacing: false,
+  bracketSameLine: false,
+  bracketSpacing: true,
   singleQuote: true,
   trailingComma: 'all',
-};
+  semi: false,
+  importOrder: [
+    '<THIRD_PARTY_MODULES>',
+    '^assets(/(.*)$)*',
+    '^components(/(.*)$)*',
+    '^constants(/(.*)$)*',
+    '^hooks(/(.*)$)*',
+    '^i18n(/(.*)$)*',
+    '^navigation(/(.*)$)*',
+    '^screens(/(.*)$)*',
+    '^services(/(.*)$)*',
+    '^store(/(.*)$)*',
+    '^styles(/(.*)$)*',
+    '^theme(/(.*)$)*',
+    '^utils(/(.*)$)*',
+    '^[./]',
+  ],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      options: {
+        parser: 'typescript',
+        importOrderParserPlugins: ['typescript', 'jsx'],
+      },
+    },
+  ],
+}

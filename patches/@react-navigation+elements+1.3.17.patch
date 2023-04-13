@@ -1,0 +1,13 @@
+diff --git a/node_modules/@react-navigation/elements/src/Header/Header.tsx b/node_modules/@react-navigation/elements/src/Header/Header.tsx
+index 12c570d..f8f3b69 100644
+--- a/node_modules/@react-navigation/elements/src/Header/Header.tsx
++++ b/node_modules/@react-navigation/elements/src/Header/Header.tsx
+@@ -227,7 +227,7 @@ export default function Header(props: Props) {
+       </Animated.View>
+       <Animated.View
+         pointerEvents="box-none"
+-        style={[{ height, minHeight, maxHeight, opacity, transform }]}
++        style={[{ height, minHeight, maxHeight, opacity, transform, marginBottom: 8 }]}
+       >
+         <View pointerEvents="none" style={{ height: headerStatusBarHeight }} />
+         <View pointerEvents="box-none" style={styles.content}>

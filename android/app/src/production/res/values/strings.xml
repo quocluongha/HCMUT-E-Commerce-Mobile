@@ -1,3 +1,5 @@
 <resources>
-  <string name="CodePushDeploymentKey">FdeswUtzeyS6aJklRCCwwBFAovX_FYLLRWrQ4</string>
+  <string name="app_name">Green Mart</string>
+  <string moduleConfig="true"
+    name="CodePushDeploymentKey">dYVFJs_4EGFt3LhYVJsvCBXipijfn50wmwfK3</string>
 </resources>

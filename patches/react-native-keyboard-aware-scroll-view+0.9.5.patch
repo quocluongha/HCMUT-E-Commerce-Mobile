@@ -1,0 +1,27 @@
+diff --git a/node_modules/react-native-keyboard-aware-scroll-view/lib/KeyboardAwareHOC.js b/node_modules/react-native-keyboard-aware-scroll-view/lib/KeyboardAwareHOC.js
+index 03f46af..10f6865 100644
+--- a/node_modules/react-native-keyboard-aware-scroll-view/lib/KeyboardAwareHOC.js
++++ b/node_modules/react-native-keyboard-aware-scroll-view/lib/KeyboardAwareHOC.js
+@@ -322,13 +322,15 @@ function KeyboardAwareHOC(
+         if (!this.mountedComponent) {
+           return
+         }
+-        const responder = this.getScrollResponder()
+-        responder &&
+-          responder.scrollResponderScrollNativeHandleToKeyboard(
+-            reactNode,
+-            extraHeight,
+-            true
+-          )
++        UIManager.measureLayout(
++          reactNode,
++          0,
++          () => {},
++          (x, y, width, height) => {
++            findNodeHandle(this._rnkasv_keyboardView), (x, y, width, height) => {
++              this._rnkasv_keyboardView.scrollToPosition(0, parseInt(y) - height - extraHeight, true);
++          }
++        });
+       }, keyboardOpeningTime)
+     }
+ 

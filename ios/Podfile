@@ -14,7 +14,7 @@ prepare_react_native_project!
 #     ...(process.env.NO_FLIPPER ? { 'react-native-flipper': { platforms: { ios: null } } } : {}),
 # ```
 
-flipper_config = ENV['NO_FLIPPER'] == "1" ? FlipperConfiguration.disabled : FlipperConfiguration.enabled(["Debug"], { 'Flipper' => '0.182.0' })
+flipper_config = ENV['NO_FLIPPER'] == "1" ? FlipperConfiguration.disabled : FlipperConfiguration.enabled(["Debug"], { 'Flipper' => '0.187.0' })
 
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
@@ -54,15 +54,15 @@ abstract_target 'SharedPods' do
 
   pod 'react-native-config', :path => '../node_modules/react-native-config'
 
-  target 'BookSellerApp' do
+  target 'GreenMarket' do
   
   end
   
-  target 'BookSellerAppDev' do
+  target 'GreenMarketDev' do
 
   end
 
-  target 'BookSellerAppTests' do
+  target 'GreenMarketTests' do
     inherit! :complete
     # Pods for testing
   end
