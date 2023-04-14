@@ -1,4 +1,4 @@
-package com.greenmarket;
+package com.bookstore;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

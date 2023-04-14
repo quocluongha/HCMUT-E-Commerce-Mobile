@@ -102,12 +102,12 @@ def reactNativeArchitectures() {
 android {
     ndkVersion rootProject.ext.ndkVersion
     compileSdkVersion rootProject.ext.compileSdkVersion
-    namespace "com.greenmarket"
+    namespace "com.bookstore"
     defaultConfig {
-        applicationId "com.greenmarket"
+        applicationId "com.bookstore"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        resValue "string", "build_config_package", "com.greenmarket"
+        resValue "string", "build_config_package", "com.bookstore"
         resourceConfigurations += ["en", "vi"]
     }
 

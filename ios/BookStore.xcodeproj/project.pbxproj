@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* GreenMarketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* GreenMarketTests.m */; };
+		00E356F31AD99517003FC87E /* BookStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BookStoreTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3DA2D0303240AD32DBC3A523 /* libPods-SharedPods-GreenMarketTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 583B4B84FCFA046B74384FBF /* libPods-SharedPods-GreenMarketTests.a */; };
+		3DA2D0303240AD32DBC3A523 /* libPods-SharedPods-BookStoreTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 583B4B84FCFA046B74384FBF /* libPods-SharedPods-BookStoreTests.a */; };
+		3E053BB829E9173B009D7032 /* BookStoreDev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E053BB729E9173B009D7032 /* BookStoreDev-Info.plist */; };
 		3E901DC429A74ECD002911C0 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E901DB429A74ECD002911C0 /* SimpleLineIcons.ttf */; };
 		3E901DC529A74ECD002911C0 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E901DB429A74ECD002911C0 /* SimpleLineIcons.ttf */; };
 		3E901DC629A74ECD002911C0 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E901DB529A74ECD002911C0 /* Fontisto.ttf */; };
@@ -81,9 +82,8 @@
 		3ECD84DE2931036700B792F7 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C65A9A49E74496E8302F981 /* Roboto-Thin.ttf */; };
 		3ECD84DF2931036700B792F7 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF034E0FCBAD47AEB7ECF759 /* Roboto-ThinItalic.ttf */; };
 		3ECD84E12931036700B792F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		3ECD84EF2931084500B792F7 /* GreenMarketDev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ECD84EE2931084400B792F7 /* GreenMarketDev-Info.plist */; };
-		85D97D05DF423287FC3693D8 /* libPods-SharedPods-GreenMarket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D45AB64097FFA21F3CF079 /* libPods-SharedPods-GreenMarket.a */; };
-		8FA54FBDBA80472DC20DA22B /* libPods-SharedPods-GreenMarketDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06846E689BF719F0203E800F /* libPods-SharedPods-GreenMarketDev.a */; };
+		85D97D05DF423287FC3693D8 /* libPods-SharedPods-BookStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D45AB64097FFA21F3CF079 /* libPods-SharedPods-BookStore.a */; };
+		8FA54FBDBA80472DC20DA22B /* libPods-SharedPods-BookStoreDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06846E689BF719F0203E800F /* libPods-SharedPods-BookStoreDev.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,27 +92,28 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = GreenMarket;
+			remoteInfo = BookStore;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* GreenMarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenMarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* BookStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* GreenMarketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenMarketTests.m; sourceTree = "<group>"; };
-		06846E689BF719F0203E800F /* libPods-SharedPods-GreenMarketDev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SharedPods-GreenMarketDev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* GreenMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GreenMarket/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = GreenMarket/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GreenMarket/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GreenMarket/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GreenMarket/main.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* BookStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookStoreTests.m; sourceTree = "<group>"; };
+		06846E689BF719F0203E800F /* libPods-SharedPods-BookStoreDev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SharedPods-BookStoreDev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Book Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BookStore/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = BookStore/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BookStore/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BookStore/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BookStore/main.m; sourceTree = "<group>"; };
 		1F6CCBA5EF294BF7987CBDE7 /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
-		27BBAB5022F114F9089CF246 /* Pods-SharedPods-GreenMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-GreenMarket.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-GreenMarket/Pods-SharedPods-GreenMarket.debug.xcconfig"; sourceTree = "<group>"; };
+		27BBAB5022F114F9089CF246 /* Pods-SharedPods-BookStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-BookStore.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-BookStore/Pods-SharedPods-BookStore.debug.xcconfig"; sourceTree = "<group>"; };
 		3536CD510D9940288687D7FA /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../src/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 		369E9079FEF54B869BC630F7 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../src/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-GreenMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenMarket.debug.xcconfig"; path = "Target Support Files/Pods-GreenMarket/Pods-GreenMarket.debug.xcconfig"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-BookStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore.debug.xcconfig"; path = "Target Support Files/Pods-BookStore/Pods-BookStore.debug.xcconfig"; sourceTree = "<group>"; };
 		3B49DFFB94094BA9961E78AE /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		3E053BB729E9173B009D7032 /* BookStoreDev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BookStoreDev-Info.plist"; sourceTree = "<group>"; };
 		3E901DB429A74ECD002911C0 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		3E901DB529A74ECD002911C0 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		3E901DB629A74ECD002911C0 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
@@ -130,31 +131,30 @@
 		3E901DC229A74ECD002911C0 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		3E901DC329A74ECD002911C0 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		3E998F1AACFB41D2A5D67C2B /* Roboto-Condensed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Condensed.ttf"; path = "../src/assets/fonts/Roboto-Condensed.ttf"; sourceTree = "<group>"; };
-		3EABE74429AFD235008B997B /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = GreenMarket/BootSplash.storyboard; sourceTree = "<group>"; };
-		3ECD84E82931036700B792F7 /* GreenMarketDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenMarketDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ECD84EE2931084400B792F7 /* GreenMarketDev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GreenMarketDev-Info.plist"; path = "/Users/quocluongha/Workspace/Green-Market-Mobile/ios/GreenMarketDev-Info.plist"; sourceTree = "<absolute>"; };
-		3F005F366C36A6A95D7BE094 /* Pods-GreenMarketDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenMarketDev.release.xcconfig"; path = "Target Support Files/Pods-GreenMarketDev/Pods-GreenMarketDev.release.xcconfig"; sourceTree = "<group>"; };
+		3EABE74429AFD235008B997B /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = BookStore/BootSplash.storyboard; sourceTree = "<group>"; };
+		3ECD84E82931036700B792F7 /* BookStoreDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookStoreDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F005F366C36A6A95D7BE094 /* Pods-BookStoreDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStoreDev.release.xcconfig"; path = "Target Support Files/Pods-BookStoreDev/Pods-BookStoreDev.release.xcconfig"; sourceTree = "<group>"; };
 		4C65A9A49E74496E8302F981 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../src/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
-		4D6D32CA95AF50F6AB1AC943 /* Pods-GreenMarketDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenMarketDev.debug.xcconfig"; path = "Target Support Files/Pods-GreenMarketDev/Pods-GreenMarketDev.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-GreenMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenMarket.release.xcconfig"; path = "Target Support Files/Pods-GreenMarket/Pods-GreenMarket.release.xcconfig"; sourceTree = "<group>"; };
-		583B4B84FCFA046B74384FBF /* libPods-SharedPods-GreenMarketTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SharedPods-GreenMarketTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B7EB9410499542E8C5724F5 /* Pods-GreenMarket-GreenMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenMarket-GreenMarketTests.debug.xcconfig"; path = "Target Support Files/Pods-GreenMarket-GreenMarketTests/Pods-GreenMarket-GreenMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
-		64D45AB64097FFA21F3CF079 /* libPods-SharedPods-GreenMarket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SharedPods-GreenMarket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6D32CA95AF50F6AB1AC943 /* Pods-BookStoreDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStoreDev.debug.xcconfig"; path = "Target Support Files/Pods-BookStoreDev/Pods-BookStoreDev.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-BookStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore.release.xcconfig"; path = "Target Support Files/Pods-BookStore/Pods-BookStore.release.xcconfig"; sourceTree = "<group>"; };
+		583B4B84FCFA046B74384FBF /* libPods-SharedPods-BookStoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SharedPods-BookStoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7EB9410499542E8C5724F5 /* Pods-BookStore-BookStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore-BookStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-BookStore-BookStoreTests/Pods-BookStore-BookStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64D45AB64097FFA21F3CF079 /* libPods-SharedPods-BookStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SharedPods-BookStore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B94ECD5B474A3CB32662DA /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../src/assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		69CD55D3B3FB46CDA3B0D699 /* Roboto-CondensedItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-CondensedItalic.ttf"; path = "../src/assets/fonts/Roboto-CondensedItalic.ttf"; sourceTree = "<group>"; };
 		6A0963F605A14513BC66E6E5 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		6BBF614290B9EF8FA32538AA /* Pods-SharedPods-GreenMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-GreenMarketTests.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-GreenMarketTests/Pods-SharedPods-GreenMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BBF614290B9EF8FA32538AA /* Pods-SharedPods-BookStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-BookStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-BookStoreTests/Pods-SharedPods-BookStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		86677EE59CE74D0D94F1875F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		896677E2779281DF5955D528 /* Pods-SharedPods-GreenMarketDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-GreenMarketDev.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-GreenMarketDev/Pods-SharedPods-GreenMarketDev.release.xcconfig"; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-GreenMarket-GreenMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenMarket-GreenMarketTests.release.xcconfig"; path = "Target Support Files/Pods-GreenMarket-GreenMarketTests/Pods-GreenMarket-GreenMarketTests.release.xcconfig"; sourceTree = "<group>"; };
+		896677E2779281DF5955D528 /* Pods-SharedPods-BookStoreDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-BookStoreDev.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-BookStoreDev/Pods-SharedPods-BookStoreDev.release.xcconfig"; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-BookStore-BookStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStore-BookStoreTests.release.xcconfig"; path = "Target Support Files/Pods-BookStore-BookStoreTests/Pods-BookStore-BookStoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		8C417F72542C45FF969DA62B /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		A909AFC92F05427EB4A5F771 /* Roboto-BoldCondensedItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldCondensedItalic.ttf"; path = "../src/assets/fonts/Roboto-BoldCondensedItalic.ttf"; sourceTree = "<group>"; };
 		AD9BDABFDE604DF4B0202084 /* Roboto-BoldCondensed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldCondensed.ttf"; path = "../src/assets/fonts/Roboto-BoldCondensed.ttf"; sourceTree = "<group>"; };
 		B344342F94104E05B57AFA73 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../src/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		CF034E0FCBAD47AEB7ECF759 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../src/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
-		DF76482B90C02808190E8F81 /* Pods-SharedPods-GreenMarketDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-GreenMarketDev.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-GreenMarketDev/Pods-SharedPods-GreenMarketDev.debug.xcconfig"; sourceTree = "<group>"; };
-		E1BD66B73C126772A504F41A /* Pods-SharedPods-GreenMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-GreenMarketTests.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-GreenMarketTests/Pods-SharedPods-GreenMarketTests.release.xcconfig"; sourceTree = "<group>"; };
-		E75CB49EF93E677FFBCA6296 /* Pods-SharedPods-GreenMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-GreenMarket.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-GreenMarket/Pods-SharedPods-GreenMarket.release.xcconfig"; sourceTree = "<group>"; };
+		DF76482B90C02808190E8F81 /* Pods-SharedPods-BookStoreDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-BookStoreDev.debug.xcconfig"; path = "Target Support Files/Pods-SharedPods-BookStoreDev/Pods-SharedPods-BookStoreDev.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BD66B73C126772A504F41A /* Pods-SharedPods-BookStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-BookStoreTests.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-BookStoreTests/Pods-SharedPods-BookStoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		E75CB49EF93E677FFBCA6296 /* Pods-SharedPods-BookStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedPods-BookStore.release.xcconfig"; path = "Target Support Files/Pods-SharedPods-BookStore/Pods-SharedPods-BookStore.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F41AA0E6405F4DEA8FC58346 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../src/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,7 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DA2D0303240AD32DBC3A523 /* libPods-SharedPods-GreenMarketTests.a in Frameworks */,
+				3DA2D0303240AD32DBC3A523 /* libPods-SharedPods-BookStoreTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85D97D05DF423287FC3693D8 /* libPods-SharedPods-GreenMarket.a in Frameworks */,
+				85D97D05DF423287FC3693D8 /* libPods-SharedPods-BookStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,20 +180,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FA54FBDBA80472DC20DA22B /* libPods-SharedPods-GreenMarketDev.a in Frameworks */,
+				8FA54FBDBA80472DC20DA22B /* libPods-SharedPods-BookStoreDev.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* GreenMarketTests */ = {
+		00E356EF1AD99517003FC87E /* BookStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* GreenMarketTests.m */,
+				00E356F21AD99517003FC87E /* BookStoreTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = GreenMarketTests;
+			path = BookStoreTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -204,7 +204,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* GreenMarket */ = {
+		13B07FAE1A68108700A75B9A /* BookStore */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -214,7 +214,7 @@
 				3EABE74429AFD235008B997B /* BootSplash.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = GreenMarket;
+			name = BookStore;
 			sourceTree = "<group>";
 		};
 		246CDD344FEA429E822893DF /* Resources */ = {
@@ -260,9 +260,9 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				64D45AB64097FFA21F3CF079 /* libPods-SharedPods-GreenMarket.a */,
-				06846E689BF719F0203E800F /* libPods-SharedPods-GreenMarketDev.a */,
-				583B4B84FCFA046B74384FBF /* libPods-SharedPods-GreenMarketTests.a */,
+				64D45AB64097FFA21F3CF079 /* libPods-SharedPods-BookStore.a */,
+				06846E689BF719F0203E800F /* libPods-SharedPods-BookStoreDev.a */,
+				583B4B84FCFA046B74384FBF /* libPods-SharedPods-BookStoreTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,10 +277,10 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				3ECD84EE2931084400B792F7 /* GreenMarketDev-Info.plist */,
-				13B07FAE1A68108700A75B9A /* GreenMarket */,
+				3E053BB729E9173B009D7032 /* BookStoreDev-Info.plist */,
+				13B07FAE1A68108700A75B9A /* BookStore */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* GreenMarketTests */,
+				00E356EF1AD99517003FC87E /* BookStoreTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -294,9 +294,9 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* GreenMarket.app */,
-				00E356EE1AD99517003FC87E /* GreenMarketTests.xctest */,
-				3ECD84E82931036700B792F7 /* GreenMarketDev.app */,
+				13B07F961A680F5B00A75B9A /* Book Store.app */,
+				00E356EE1AD99517003FC87E /* BookStoreTests.xctest */,
+				3ECD84E82931036700B792F7 /* BookStoreDev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -304,18 +304,18 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-GreenMarket.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-GreenMarket.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-GreenMarket-GreenMarketTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-GreenMarket-GreenMarketTests.release.xcconfig */,
-				4D6D32CA95AF50F6AB1AC943 /* Pods-GreenMarketDev.debug.xcconfig */,
-				3F005F366C36A6A95D7BE094 /* Pods-GreenMarketDev.release.xcconfig */,
-				27BBAB5022F114F9089CF246 /* Pods-SharedPods-GreenMarket.debug.xcconfig */,
-				E75CB49EF93E677FFBCA6296 /* Pods-SharedPods-GreenMarket.release.xcconfig */,
-				DF76482B90C02808190E8F81 /* Pods-SharedPods-GreenMarketDev.debug.xcconfig */,
-				896677E2779281DF5955D528 /* Pods-SharedPods-GreenMarketDev.release.xcconfig */,
-				6BBF614290B9EF8FA32538AA /* Pods-SharedPods-GreenMarketTests.debug.xcconfig */,
-				E1BD66B73C126772A504F41A /* Pods-SharedPods-GreenMarketTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-BookStore.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-BookStore.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-BookStore-BookStoreTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-BookStore-BookStoreTests.release.xcconfig */,
+				4D6D32CA95AF50F6AB1AC943 /* Pods-BookStoreDev.debug.xcconfig */,
+				3F005F366C36A6A95D7BE094 /* Pods-BookStoreDev.release.xcconfig */,
+				27BBAB5022F114F9089CF246 /* Pods-SharedPods-BookStore.debug.xcconfig */,
+				E75CB49EF93E677FFBCA6296 /* Pods-SharedPods-BookStore.release.xcconfig */,
+				DF76482B90C02808190E8F81 /* Pods-SharedPods-BookStoreDev.debug.xcconfig */,
+				896677E2779281DF5955D528 /* Pods-SharedPods-BookStoreDev.release.xcconfig */,
+				6BBF614290B9EF8FA32538AA /* Pods-SharedPods-BookStoreTests.debug.xcconfig */,
+				E1BD66B73C126772A504F41A /* Pods-SharedPods-BookStoreTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -323,9 +323,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* GreenMarketTests */ = {
+		00E356ED1AD99517003FC87E /* BookStoreTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GreenMarketTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BookStoreTests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -339,14 +339,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = GreenMarketTests;
-			productName = GreenMarketTests;
-			productReference = 00E356EE1AD99517003FC87E /* GreenMarketTests.xctest */;
+			name = BookStoreTests;
+			productName = BookStoreTests;
+			productReference = 00E356EE1AD99517003FC87E /* BookStoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* GreenMarket */ = {
+		13B07F861A680F5B00A75B9A /* BookStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GreenMarket" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BookStore" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -361,14 +361,14 @@
 			);
 			dependencies = (
 			);
-			name = GreenMarket;
-			productName = GreenMarket;
-			productReference = 13B07F961A680F5B00A75B9A /* GreenMarket.app */;
+			name = BookStore;
+			productName = BookStore;
+			productReference = 13B07F961A680F5B00A75B9A /* Book Store.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3ECD84C72931036700B792F7 /* GreenMarketDev */ = {
+		3ECD84C72931036700B792F7 /* BookStoreDev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3ECD84E52931036700B792F7 /* Build configuration list for PBXNativeTarget "GreenMarketDev" */;
+			buildConfigurationList = 3ECD84E52931036700B792F7 /* Build configuration list for PBXNativeTarget "BookStoreDev" */;
 			buildPhases = (
 				3ECD84C82931036700B792F7 /* [CP] Check Pods Manifest.lock */,
 				3ECD84C92931036700B792F7 /* Start Packager */,
@@ -383,9 +383,9 @@
 			);
 			dependencies = (
 			);
-			name = GreenMarketDev;
-			productName = GreenMarket;
-			productReference = 3ECD84E82931036700B792F7 /* GreenMarketDev.app */;
+			name = BookStoreDev;
+			productName = BookStore;
+			productReference = 3ECD84E82931036700B792F7 /* BookStoreDev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -405,7 +405,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "GreenMarket" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BookStore" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -419,9 +419,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* GreenMarket */,
-				00E356ED1AD99517003FC87E /* GreenMarketTests */,
-				3ECD84C72931036700B792F7 /* GreenMarketDev */,
+				13B07F861A680F5B00A75B9A /* BookStore */,
+				00E356ED1AD99517003FC87E /* BookStoreTests */,
+				3ECD84C72931036700B792F7 /* BookStoreDev */,
 			);
 		};
 /* End PBXProject section */
@@ -479,7 +479,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ECD84EF2931084500B792F7 /* GreenMarketDev-Info.plist in Resources */,
 				3E901DDF29A74ECD002911C0 /* Entypo.ttf in Resources */,
 				3E901DDB29A74ECD002911C0 /* Zocial.ttf in Resources */,
 				3EABE74629AFD235008B997B /* BootSplash.storyboard in Resources */,
@@ -499,6 +498,7 @@
 				3ECD84D52931036700B792F7 /* Roboto-BoldCondensedItalic.ttf in Resources */,
 				3ECD84D62931036700B792F7 /* Roboto-BoldItalic.ttf in Resources */,
 				3E901DCB29A74ECD002911C0 /* FontAwesome5_Regular.ttf in Resources */,
+				3E053BB829E9173B009D7032 /* BookStoreDev-Info.plist in Resources */,
 				3ECD84D72931036700B792F7 /* Roboto-Condensed.ttf in Resources */,
 				3ECD84D82931036700B792F7 /* Roboto-CondensedItalic.ttf in Resources */,
 				3E901DD529A74ECD002911C0 /* FontAwesome.ttf in Resources */,
@@ -540,15 +540,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarket/Pods-SharedPods-GreenMarket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStore/Pods-SharedPods-BookStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarket/Pods-SharedPods-GreenMarket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStore/Pods-SharedPods-BookStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarket/Pods-SharedPods-GreenMarket-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStore/Pods-SharedPods-BookStore-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3C002075DD49FD96F087B541 /* [CP] Embed Pods Frameworks */ = {
@@ -557,15 +557,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketDev/Pods-SharedPods-GreenMarketDev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreDev/Pods-SharedPods-BookStoreDev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketDev/Pods-SharedPods-GreenMarketDev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreDev/Pods-SharedPods-BookStoreDev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketDev/Pods-SharedPods-GreenMarketDev-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreDev/Pods-SharedPods-BookStoreDev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3ECD84C82931036700B792F7 /* [CP] Check Pods Manifest.lock */ = {
@@ -583,7 +583,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SharedPods-GreenMarketDev-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SharedPods-BookStoreDev-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -629,15 +629,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketDev/Pods-SharedPods-GreenMarketDev-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreDev/Pods-SharedPods-BookStoreDev-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketDev/Pods-SharedPods-GreenMarketDev-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreDev/Pods-SharedPods-BookStoreDev-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketDev/Pods-SharedPods-GreenMarketDev-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreDev/Pods-SharedPods-BookStoreDev-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -655,7 +655,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SharedPods-GreenMarketTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SharedPods-BookStoreTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -677,7 +677,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SharedPods-GreenMarket-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SharedPods-BookStore-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -690,15 +690,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketTests/Pods-SharedPods-GreenMarketTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreTests/Pods-SharedPods-BookStoreTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketTests/Pods-SharedPods-GreenMarketTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreTests/Pods-SharedPods-BookStoreTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketTests/Pods-SharedPods-GreenMarketTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreTests/Pods-SharedPods-BookStoreTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
@@ -707,15 +707,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarket/Pods-SharedPods-GreenMarket-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStore/Pods-SharedPods-BookStore-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarket/Pods-SharedPods-GreenMarket-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStore/Pods-SharedPods-BookStore-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarket/Pods-SharedPods-GreenMarket-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStore/Pods-SharedPods-BookStore-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
@@ -724,15 +724,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketTests/Pods-SharedPods-GreenMarketTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreTests/Pods-SharedPods-BookStoreTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketTests/Pods-SharedPods-GreenMarketTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreTests/Pods-SharedPods-BookStoreTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-GreenMarketTests/Pods-SharedPods-GreenMarketTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharedPods-BookStoreTests/Pods-SharedPods-BookStoreTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -761,7 +761,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* GreenMarketTests.m in Sources */,
+				00E356F31AD99517003FC87E /* BookStoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,7 +788,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* GreenMarket */;
+			target = 13B07F861A680F5B00A75B9A /* BookStore */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -796,14 +796,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BBF614290B9EF8FA32538AA /* Pods-SharedPods-GreenMarketTests.debug.xcconfig */;
+			baseConfigurationReference = 6BBF614290B9EF8FA32538AA /* Pods-SharedPods-BookStoreTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = GreenMarketTests/Info.plist;
+				INFOPLIST_FILE = BookStoreTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -817,17 +817,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenMarket.app/GreenMarket";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookStore.app/BookStore";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1BD66B73C126772A504F41A /* Pods-SharedPods-GreenMarketTests.release.xcconfig */;
+			baseConfigurationReference = E1BD66B73C126772A504F41A /* Pods-SharedPods-BookStoreTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = GreenMarketTests/Info.plist;
+				INFOPLIST_FILE = BookStoreTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -841,13 +841,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenMarket.app/GreenMarket";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookStore.app/BookStore";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27BBAB5022F114F9089CF246 /* Pods-SharedPods-GreenMarket.debug.xcconfig */;
+			baseConfigurationReference = 27BBAB5022F114F9089CF246 /* Pods-SharedPods-BookStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -855,7 +855,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = GreenMarket/Info.plist;
+				INFOPLIST_FILE = BookStore/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Green Mart";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -868,8 +868,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenmart;
-				PRODUCT_NAME = GreenMarket;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookstore;
+				PRODUCT_NAME = "Book Store";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -878,14 +878,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E75CB49EF93E677FFBCA6296 /* Pods-SharedPods-GreenMarket.release.xcconfig */;
+			baseConfigurationReference = E75CB49EF93E677FFBCA6296 /* Pods-SharedPods-BookStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = GreenMarket/Info.plist;
+				INFOPLIST_FILE = BookStore/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Green Mart";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -898,8 +898,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenmart;
-				PRODUCT_NAME = GreenMarket;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookstore;
+				PRODUCT_NAME = "Book Store";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -907,7 +907,7 @@
 		};
 		3ECD84E62931036700B792F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF76482B90C02808190E8F81 /* Pods-SharedPods-GreenMarketDev.debug.xcconfig */;
+			baseConfigurationReference = DF76482B90C02808190E8F81 /* Pods-SharedPods-BookStoreDev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -915,7 +915,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "GreenMarketDev-Info.plist";
+				INFOPLIST_FILE = "BookStoreDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -927,7 +927,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenmart.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookstore.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -937,14 +937,14 @@
 		};
 		3ECD84E72931036700B792F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 896677E2779281DF5955D528 /* Pods-SharedPods-GreenMarketDev.release.xcconfig */;
+			baseConfigurationReference = 896677E2779281DF5955D528 /* Pods-SharedPods-BookStoreDev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "GreenMarketDev-Info.plist";
+				INFOPLIST_FILE = "BookStoreDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -956,7 +956,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenmart.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bookstore.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1103,7 +1103,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GreenMarketTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BookStoreTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1112,7 +1112,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GreenMarket" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BookStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1121,7 +1121,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3ECD84E52931036700B792F7 /* Build configuration list for PBXNativeTarget "GreenMarketDev" */ = {
+		3ECD84E52931036700B792F7 /* Build configuration list for PBXNativeTarget "BookStoreDev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3ECD84E62931036700B792F7 /* Debug */,
@@ -1130,7 +1130,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "GreenMarket" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BookStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

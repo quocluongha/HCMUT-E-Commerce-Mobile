@@ -54,15 +54,15 @@ abstract_target 'SharedPods' do
 
   pod 'react-native-config', :path => '../node_modules/react-native-config'
 
-  target 'GreenMarket' do
+  target 'BookStore' do
   
   end
   
-  target 'GreenMarketDev' do
+  target 'BookStoreDev' do
 
   end
 
-  target 'GreenMarketTests' do
+  target 'BookStoreTests' do
     inherit! :complete
     # Pods for testing
   end
