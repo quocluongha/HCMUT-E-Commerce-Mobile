@@ -77,7 +77,7 @@ export const ProductList = React.forwardRef<
           productActions.updateCart({
             id: item?._id ?? '',
             quantity: 1,
-            totalPrice: item?.pricePerUnit ?? 0,
+            pricePerUnit: item?.pricePerUnit ?? 0,
             isOverrideQuantity: false,
           }),
         )
@@ -112,7 +112,7 @@ export const ProductList = React.forwardRef<
                 adjustsFontSizeToFit
                 style={[styles.name, { color: '#FFB703' }]}
               >
-                {formatCurrency(item?.pricePerUnit, 'VND')}
+                {formatCurrency(item?.pricePerUnit)}
               </Text>
               <TouchableOpacity
                 style={styles.addButton}

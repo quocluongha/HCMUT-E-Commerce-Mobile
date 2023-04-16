@@ -75,7 +75,7 @@ export const ProductDetail: React.FC<Props> = ({ navigation, route }) => {
       productActions.updateCart({
         id: _id ?? '',
         quantity: values.quantity,
-        totalPrice: values.quantity * (pricePerUnit ?? 0),
+        pricePerUnit: pricePerUnit ?? 0,
         isOverrideQuantity: false,
       }),
     )
@@ -188,7 +188,7 @@ export const ProductDetail: React.FC<Props> = ({ navigation, route }) => {
                   style={[styles.title, { color: '#FFB703', flex: 1 }]}
                   numberOfLines={2}
                 >
-                  {formatCurrency(pricePerUnit, 'VND')}
+                  {formatCurrency(pricePerUnit)}
                 </Text>
                 <Counter
                   keyboardType="numeric"

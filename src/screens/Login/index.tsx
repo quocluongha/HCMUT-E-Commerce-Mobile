@@ -40,7 +40,7 @@ export const Login: React.FC<Props> = ({ navigation }) => {
   const initialValues: FormValues = {
     username: '',
     password: '',
-    isSaveLoggedIn: false,
+    isSaveLoggedIn: true,
   }
   const isSubmitting = useAppSelector(state => state.auth.isSubmitting)
   const dispatch = useAppDispatch()

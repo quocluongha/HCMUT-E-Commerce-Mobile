@@ -15,7 +15,7 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "3ECD84C72931036700B792F7"
-                     BuildableName = "BookStoreDev.app"
+                     BuildableName = "Book Store Dev.app"
                      BlueprintName = "BookStoreDev"
                      ReferencedContainer = "container:BookStore.xcodeproj">
                   </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3ECD84C72931036700B792F7"
-               BuildableName = "BookStoreDev.app"
+               BuildableName = "Book Store Dev.app"
                BlueprintName = "BookStoreDev"
                ReferencedContainer = "container:BookStore.xcodeproj">
             </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3ECD84C72931036700B792F7"
-            BuildableName = "BookStoreDev.app"
+            BuildableName = "Book Store Dev.app"
             BlueprintName = "BookStoreDev"
             ReferencedContainer = "container:BookStore.xcodeproj">
          </BuildableReference>
@@ -79,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3ECD84C72931036700B792F7"
-            BuildableName = "BookStoreDev.app"
+            BuildableName = "Book Store Dev.app"
             BlueprintName = "BookStoreDev"
             ReferencedContainer = "container:BookStore.xcodeproj">
          </BuildableReference>

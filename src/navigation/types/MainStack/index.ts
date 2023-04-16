@@ -1,5 +1,7 @@
 import { NavigatorScreenParams } from '@react-navigation/native'
 
+import { Product } from 'constants/api'
+
 import { MainTabParams } from '../MainTab'
 
 export type MainStackParams = {
@@ -14,14 +16,15 @@ export type MainStackParams = {
   Registration: any
   Search: any
   Landing: any
+  CheckoutComplete: any
 }
 
 export * from './Address'
 export * from './Checkout'
+export * from './Landing'
 export * from './Login'
 export * from './OTPScreen'
 export * from './ProducDetail'
 export * from './Registration'
-export * from './Splash'
 export * from './Search'
-export * from './Landing'
+export * from './Splash'

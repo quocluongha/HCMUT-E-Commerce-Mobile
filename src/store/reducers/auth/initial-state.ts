@@ -23,7 +23,7 @@ export const initialOTPData = {
 } as const satisfies GenerateOTPResponseData
 
 export const initialState: AuthState = {
-  isSaveLoggedIn: false,
+  isSaveLoggedIn: true,
   isSubmitting: false,
   isLoggingOut: false,
   isSubmittingRegister: false,

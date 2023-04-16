@@ -16,6 +16,7 @@ import { useAppDispatch } from 'hooks'
 import {
   AddressEditor,
   Checkout,
+  CheckoutComplete,
   Landing,
   ListAddress,
   Login,
@@ -138,6 +139,11 @@ export const AppNavigator: React.FC = () => {
               name="Checkout"
               component={Checkout}
               options={{ title: t('checkout') }}
+            />
+            <Stack.Screen
+              name="CheckoutComplete"
+              component={CheckoutComplete}
+              options={{ headerShown: false }}
             />
           </Stack.Group>
         }

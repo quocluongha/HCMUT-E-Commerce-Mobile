@@ -24,7 +24,7 @@ const updateCart = (
   state: ProductState,
   action: PayloadAction<CartProduct & { isOverrideQuantity: boolean }>,
 ) => {
-  const { id, quantity, totalPrice, isOverrideQuantity } = action.payload
+  const { id, quantity, pricePerUnit, isOverrideQuantity } = action.payload
 
   const index = state.listCartProduct.findIndex(item => item.id === id)
 
@@ -32,18 +32,13 @@ const updateCart = (
     const updatedQuantiy = isOverrideQuantity
       ? quantity
       : state.listCartProduct[index].quantity + quantity
-    const updatedQPrice = isOverrideQuantity
-      ? totalPrice
-      : state.listCartProduct[index].totalPrice + totalPrice
 
     state.listCartProduct[index].quantity = updatedQuantiy
-    state.listCartProduct[index].totalPrice = updatedQPrice
-    state.listCartProduct
   } else {
     const updatedCart = state.listCartProduct.concat({
-      id: id,
-      quantity: quantity,
-      totalPrice: totalPrice,
+      id,
+      quantity,
+      pricePerUnit,
     })
     state.listCartProduct = updatedCart
   }

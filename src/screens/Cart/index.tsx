@@ -51,13 +51,13 @@ export const Cart: React.FC<Props> = ({ navigation }) => {
 
   const totalPrice = useAppSelector(state =>
     state.product.listCartProduct
-      .map(item => item.totalPrice)
+      .map(item => item.pricePerUnit * item.quantity)
       .reduce((prev, curr) => prev + curr, 0),
   )
 
   const total: SummaryItem = {
     title: t('totalAmount'),
-    content: formatCurrency(totalPrice, 'VND'),
+    content: formatCurrency(totalPrice),
   }
 
   const onPressChangeAddressHandler = () => {

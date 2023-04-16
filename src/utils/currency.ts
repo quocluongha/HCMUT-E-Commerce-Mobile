@@ -22,7 +22,7 @@ export const formatCurrency = (
   const lang = getLanguage()
   const defaultCurrency = getCurrency(lang)
 
-  const result = new Intl.NumberFormat('vi', {
+  const result = new Intl.NumberFormat(lang, {
     style: 'currency',
     currency: customCurrency ?? defaultCurrency,
   }).format(Number(input))

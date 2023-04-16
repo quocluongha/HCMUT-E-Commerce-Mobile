@@ -29,13 +29,11 @@ import { Counter } from './Counter'
 interface Props extends Product {
   index: number
   quantity: number
-  totalPrice: number
   onPress?: (event: GestureResponderEvent) => void
 }
 
 interface Values {
   quantity: number
-  totalPrice: number
 }
 
 const AnimatedSwipeable = Animated.createAnimatedComponent(Swipeable)
@@ -47,13 +45,11 @@ export const CartProductItem: React.FC<Props> = ({
   viProductName,
   pricePerUnit,
   quantity,
-  totalPrice,
   photoAvatarUrl,
   onPress,
 }) => {
   const [initialValues, setInitialValues] = useState<Values>({
     quantity: quantity,
-    totalPrice: totalPrice,
   })
 
   const { i18n } = useTranslation()
@@ -63,12 +59,12 @@ export const CartProductItem: React.FC<Props> = ({
 
   const dispatch = useAppDispatch()
 
-  const updateCart = debounce((quantity: number, totalPrice: number) => {
+  const updateCart = debounce((quantity: number) => {
     dispatch(
       productActions.updateCart({
         id: _id ?? '',
-        quantity: quantity,
-        totalPrice: totalPrice,
+        quantity,
+        pricePerUnit: pricePerUnit ?? 0,
         isOverrideQuantity: true,
       }),
     )
@@ -78,14 +74,14 @@ export const CartProductItem: React.FC<Props> = ({
     values: Values,
     formikHelpers: FormikHelpers<Values>,
   ) => {
-    const { quantity, totalPrice } = values
+    const { quantity } = values
 
-    updateCart(quantity, totalPrice)
+    updateCart(quantity)
   }
 
   useEffect(() => {
-    setInitialValues(currValues => ({ ...currValues, quantity, totalPrice }))
-  }, [quantity, totalPrice])
+    setInitialValues(currValues => ({ ...currValues, quantity }))
+  }, [quantity])
 
   return (
     <Formik
@@ -97,35 +93,28 @@ export const CartProductItem: React.FC<Props> = ({
         const handleQuantityInputChange = (text: string) => {
           if (text === '') {
             setFieldValue('quantity', 1)
-            setFieldValue('totalPrice', pricePerUnit ?? 0)
-            updateCart(1, pricePerUnit ?? 0)
+            updateCart(1)
           } else {
             const updatedQuantity = Number(text.replace(/[.-]*/gi, ''))
-            const updatedTotalPrice = updatedQuantity * (pricePerUnit ?? 0)
 
             setFieldValue('quantity', updatedQuantity)
-            setFieldValue('totalPrice', updatedTotalPrice)
-            updateCart(updatedQuantity, updatedTotalPrice)
+            updateCart(updatedQuantity)
           }
         }
 
         const handleIncrement = () => {
           const updatedQuantity = values.quantity + 1
-          const updatedTotalPrice = updatedQuantity * (pricePerUnit ?? 0)
 
           setFieldValue('quantity', updatedQuantity)
-          setFieldValue('totalPrice', updatedTotalPrice)
-          updateCart(updatedQuantity, updatedTotalPrice)
+          updateCart(updatedQuantity)
         }
 
         const handleDecrement = () => {
           const updatedQuantity =
             values.quantity - 1 <= 1 ? 1 : values.quantity - 1
-          const updatedTotalPrice = updatedQuantity * (pricePerUnit ?? 0)
 
           setFieldValue('quantity', updatedQuantity)
-          setFieldValue('totalPrice', updatedTotalPrice)
-          updateCart(updatedQuantity, updatedTotalPrice)
+          updateCart(updatedQuantity)
         }
 
         const renderRightActions = () => {
@@ -172,7 +161,7 @@ export const CartProductItem: React.FC<Props> = ({
               <View style={styles.subContainer}>
                 <Text style={[styles.text, styles.title]}>{productName}</Text>
                 <Text style={[styles.text, styles.pricePerUnit]}>
-                  {formatCurrency(pricePerUnit, 'VND')}
+                  {formatCurrency(pricePerUnit)}
                 </Text>
                 <View style={styles.itemBottomContainer}>
                   <Counter
@@ -190,7 +179,7 @@ export const CartProductItem: React.FC<Props> = ({
                       styles.totalPrice,
                     ]}
                   >
-                    {formatCurrency(values.totalPrice, 'VND')}
+                    {formatCurrency(pricePerUnit * values.quantity)}
                   </Text>
                 </View>
               </View>
@@ -207,7 +196,7 @@ const styles = ScaledSheet.create({
     backgroundColor: '#FFFFFF',
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: '8@s',
+    padding: '8@s',
   },
   leftActionContainer: {
     backgroundColor: 'red',

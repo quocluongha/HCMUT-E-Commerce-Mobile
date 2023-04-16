@@ -3,7 +3,7 @@ import React from 'react'
 import { ListRenderItem, StyleProp, View, ViewStyle } from 'react-native'
 import { KeyboardAwareFlatList } from 'react-native-keyboard-aware-scroll-view'
 import Animated from 'react-native-reanimated'
-import { ScaledSheet } from 'react-native-size-matters'
+import { ScaledSheet, verticalScale } from 'react-native-size-matters'
 
 import { Product } from 'constants/api'
 
@@ -30,7 +30,7 @@ export const CartProductList: React.FC<Props> = () => {
   const listCartProduct = useAppSelector(state => state.product.listCartProduct)
 
   const renderItem: ListRenderItem<Product> = ({ item, index }) => {
-    const { quantity, totalPrice } = listCartProduct[index]
+    const { quantity } = listCartProduct[index]
 
     const onPressItemHandler = () => {
       navigate('ProductDetail', { id: item?._id })
@@ -41,7 +41,6 @@ export const CartProductList: React.FC<Props> = () => {
         {...item}
         index={index}
         quantity={quantity}
-        totalPrice={totalPrice}
         onPress={onPressItemHandler}
       />
     )
@@ -50,10 +49,13 @@ export const CartProductList: React.FC<Props> = () => {
   return (
     <AnimatedKeyboardAwareFlatList
       enableOnAndroid
+      bounces={false}
       data={listDetailCartProduct}
+      contentContainerStyle={{
+        paddingTop: verticalScale(12),
+        rowGap: verticalScale(12),
+      }}
       renderItem={renderItem}
-      ItemSeparatorComponent={() => <View style={styles.separator} />}
-      ListFooterComponent={<View style={styles.separator} />}
     />
   )
 }
